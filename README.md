@@ -1,8 +1,33 @@
-# UI TripleD
+<p align="center">
+  <a href="https://github.com/moumen-soliman/uitripled">
+    <img width="100" height="100" alt="UI TripleD Logo" src="./public/logo.png" />
+  </a>
 
-Production-ready UI components and blocks powered by shadcn/ui and Framer Motion.
+</p>
 
-![OG Image](./public/readme.png)
+<h1 align="center">UI TripleD</h1>
+
+<p align="center">
+  <strong>Production-ready UI components and blocks powered by shadcn/ui and Framer Motion.</strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/moumen-soliman/uitripled">Docs</a> ·
+  <a href="https://github.com/moumen-soliman/uitripled/issues/new?template=bug_report.md">Report a bug</a> ·
+  <a href="https://github.com/moumen-soliman/uitripled/issues/new?template=feature_request.md">Feature request</a> ·
+</p>
+
+<p align="center">
+  <a href="LICENSE.md"><img src="https://img.shields.io/github/license/moumen-soliman/uitripled?label=license&logo=github" alt="License" /></a>
+  <a href="https://github.com/moumen-soliman/uitripled/issues"><img src="https://img.shields.io/github/issues/moumen-soliman/uitripled" alt="Issues" /></a>
+</p>
+
+<p>
+Production-ready UI components and blocks powered by shadcn/ui
+and Framer Motion.
+</p>
+
+<img width="2800" height="2044" alt="UI TripleD" src="./public/readme.png" />
 
 ## Features
 
