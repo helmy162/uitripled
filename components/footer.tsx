@@ -44,49 +44,10 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/templates"
+                  href="/builder"
                   className="text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  Templates
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#pricing"
-                  className="text-muted-foreground transition-colors hover:text-foreground"
-                >
-                  Pricing
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Legal Column */}
-          <div>
-            <h3 className="mb-4 text-sm font-semibold">Legal</h3>
-            <ul className="space-y-3 text-sm">
-              <li>
-                <Link
-                  href="/terms"
-                  className="text-muted-foreground transition-colors hover:text-foreground"
-                >
-                  Terms of Service
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/privacy"
-                  className="text-muted-foreground transition-colors hover:text-foreground"
-                >
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/refund"
-                  className="text-muted-foreground transition-colors hover:text-foreground"
-                >
-                  Refund Policy
+                  Builder
                 </Link>
               </li>
             </ul>
@@ -104,16 +65,6 @@ export function Footer() {
                   className="text-muted-foreground transition-colors hover:text-foreground"
                 >
                   Twitter / X
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://x.com/uitripled"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground transition-colors hover:text-foreground"
-                >
-                  TripleD Studio
                 </a>
               </li>
               <li>
