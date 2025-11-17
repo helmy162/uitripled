@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { GithubIcon } from "lucide-react";
 import { Badge } from "./ui/badge";
 import { ThemeToggle } from "@/components/theme-toggle";
 
@@ -78,6 +79,15 @@ export function Header() {
                   height={17}
                   className="hidden dark:block"
                 />
+              </Link>
+              <Link
+                href="https://github.com/moumen-soliman/uitripled"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground transition-colors hover:text-foreground"
+                aria-label="GitHub"
+              >
+                <GithubIcon className="h-4 w-4" />
               </Link>
             </nav>
             <ThemeToggle />
