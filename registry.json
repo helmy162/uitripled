@@ -1,11 +1,13 @@
 {
   "$schema": "https://ui.shadcn.com/schema.json",
   "name": "uitripled",
-  "version": "1.0.0",
+  "homepage": "https://ui.tripled.work",
   "items": [
     {
       "name": "about-us-page",
       "type": "registry:page",
+      "title": "About Us Page",
+      "description": "Glassmorphism about page showcasing mission, values, and leadership with motion accents.",
       "registryDependencies": [
         "badge",
         "button"
@@ -26,6 +28,8 @@
     {
       "name": "about-us-section",
       "type": "registry:block",
+      "title": "About Us",
+      "description": "About us section with value cards, icons, and animated reveal effects",
       "registryDependencies": [
         "badge",
         "card"
@@ -46,6 +50,8 @@
     {
       "name": "ai-chat-interface",
       "type": "registry:component",
+      "title": "AI Chat Interface",
+      "description": "Chat input with attachments, model selector, and accessible controls",
       "registryDependencies": [
         "button",
         "textarea"
@@ -67,6 +73,8 @@
     {
       "name": "ai-glow-input",
       "type": "registry:component",
+      "title": "AI Glow Input",
+      "description": "Input field with dynamic glow that pulses based on typing speed - smart motion feedback",
       "registryDependencies": [
         "button"
       ],
@@ -86,6 +94,8 @@
     {
       "name": "ai-loading-skeleton",
       "type": "registry:component",
+      "title": "AI Loading Skeleton",
+      "description": "Loading state with diagonal shimmer gradient and opacity wave",
       "registryDependencies": [
         "button"
       ],
@@ -104,6 +114,8 @@
     {
       "name": "ai-response-typing",
       "type": "registry:component",
+      "title": "AI Response Typing Stream",
+      "description": "Character-by-character typing animation with natural pauses and thinking states",
       "registryDependencies": [
         "button"
       ],
@@ -123,6 +135,8 @@
     {
       "name": "ai-unlock-animation",
       "type": "registry:ui",
+      "title": "AI Unlock Animation",
+      "description": "Premium unlock animation with particles, ripples, and loading states",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion",
@@ -140,6 +154,8 @@
     {
       "name": "animated-accordion",
       "type": "registry:component",
+      "title": "Animated Accordion",
+      "description": "Accordion with smooth expand/collapse and rotate arrow",
       "registryDependencies": [
         "button"
       ],
@@ -160,6 +176,8 @@
     {
       "name": "animated-badge",
       "type": "registry:ui",
+      "title": "Animated Badge",
+      "description": "Badge with scale and spin animation",
       "registryDependencies": [
         "badge"
       ],
@@ -179,6 +197,8 @@
     {
       "name": "animated-card-stack",
       "type": "registry:component",
+      "title": "Animated Card Stack",
+      "description": "Stacked cards that expand on hover",
       "registryDependencies": [
         "card"
       ],
@@ -197,6 +217,8 @@
     {
       "name": "animated-checkbox",
       "type": "registry:component",
+      "title": "Animated Checkbox",
+      "description": "Checkbox with checkmark animation",
       "registryDependencies": [
         "button"
       ],
@@ -217,6 +239,8 @@
     {
       "name": "animated-dialog",
       "type": "registry:component",
+      "title": "Animated Dialog",
+      "description": "Modal dialog with backdrop fade and spring animation",
       "registryDependencies": [
         "button"
       ],
@@ -237,6 +261,8 @@
     {
       "name": "animated-list",
       "type": "registry:component",
+      "title": "Animated List",
+      "description": "List with staggered item animations",
       "registryDependencies": [
         "card"
       ],
@@ -256,6 +282,8 @@
     {
       "name": "animated-navbar",
       "type": "registry:component",
+      "title": "Animated Navbar",
+      "description": "Navigation bar with animated underline indicator",
       "registryDependencies": [
         "button"
       ],
@@ -275,6 +303,8 @@
     {
       "name": "animated-pagination",
       "type": "registry:component",
+      "title": "Animated Pagination",
+      "description": "Pagination with smooth page transition indicator",
       "registryDependencies": [
         "button"
       ],
@@ -295,6 +325,8 @@
     {
       "name": "animated-profile-menu",
       "type": "registry:component",
+      "title": "Animated Profile Menu",
+      "description": "Floating profile avatar that reveals quick action cards with smooth motion",
       "registryDependencies": [
         "avatar"
       ],
@@ -315,6 +347,8 @@
     {
       "name": "animated-progress",
       "type": "registry:ui",
+      "title": "Animated Progress Bar",
+      "description": "Progress bar with smooth animation",
       "registryDependencies": [
         "card"
       ],
@@ -334,6 +368,8 @@
     {
       "name": "animated-quote-block",
       "type": "registry:ui",
+      "title": "Animated Quote Block",
+      "description": "Quote that types itself in, pauses, then subtly breathes",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion",
@@ -351,6 +387,8 @@
     {
       "name": "animated-radio",
       "type": "registry:component",
+      "title": "Animated Radio",
+      "description": "Radio button group with selection ripple",
       "registryDependencies": [
         "button"
       ],
@@ -370,6 +408,8 @@
     {
       "name": "animated-select",
       "type": "registry:component",
+      "title": "Animated Select",
+      "description": "Select dropdown with smooth open/close animation",
       "registryDependencies": [
         "button"
       ],
@@ -390,6 +430,8 @@
     {
       "name": "animated-sidebar",
       "type": "registry:component",
+      "title": "Animated Sidebar",
+      "description": "Sidebar with slide-in animation and overlay",
       "registryDependencies": [
         "button"
       ],
@@ -410,6 +452,8 @@
     {
       "name": "animated-tabs",
       "type": "registry:component",
+      "title": "Animated Tabs",
+      "description": "Tabs with sliding indicator animation",
       "registryDependencies": [
         "tabs"
       ],
@@ -429,6 +473,8 @@
     {
       "name": "animated-tooltip",
       "type": "registry:component",
+      "title": "Animated Tooltip",
+      "description": "Tooltip with delay and slide animation",
       "registryDependencies": [
         "button"
       ],
@@ -449,6 +495,8 @@
     {
       "name": "auto-revealing-heading",
       "type": "registry:page",
+      "title": "Auto-Revealing Heading",
+      "description": "Heading that reveals each letter/word with staggered motion on scroll",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion",
@@ -466,6 +514,8 @@
     {
       "name": "avatar-group",
       "type": "registry:component",
+      "title": "Avatar Group",
+      "description": "Stacked avatar group with hover reveal and tooltips",
       "registryDependencies": [
         "button"
       ],
@@ -486,6 +536,8 @@
     {
       "name": "bento-grid-block",
       "type": "registry:block",
+      "title": "Bento Grid Block",
+      "description": "Layered bento grid with imagery, metrics, and smooth motion reveals",
       "registryDependencies": [
         "badge",
         "button"
@@ -506,6 +558,8 @@
     {
       "name": "blog-block",
       "type": "registry:block",
+      "title": "Blog Block",
+      "description": "Animated blog posts grid with staggered cards, date/time indicators, and hover effects",
       "registryDependencies": [
         "badge",
         "button",
@@ -527,6 +581,8 @@
     {
       "name": "bottom-modal",
       "type": "registry:component",
+      "title": "Bottom Modal",
+      "description": "Cute bottom-centered modal with smooth slide-up animation and glassmorphism design",
       "registryDependencies": [
         "button"
       ],
@@ -547,6 +603,8 @@
     {
       "name": "browse-folder",
       "type": "registry:component",
+      "title": "Browse Folder",
+      "description": "Folder browser with animated tabs and content",
       "registryDependencies": [
         "badge",
         "button",
@@ -569,6 +627,8 @@
     {
       "name": "cash-flow-chart",
       "type": "registry:ui",
+      "title": "Accessible Cash Flow Chart",
+      "description": "Interactive cash flow bar chart with keyboard focus, tooltips, and screen reader support",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion",
@@ -586,6 +646,8 @@
     {
       "name": "chat-app",
       "type": "registry:component",
+      "title": "Chat App",
+      "description": "Fully functional chat interface with animated messages",
       "registryDependencies": [
         "button",
         "card",
@@ -609,6 +671,8 @@
     {
       "name": "command-palette",
       "type": "registry:component",
+      "title": "Command Palette",
+      "description": "Command palette with search and keyboard navigation",
       "registryDependencies": [
         "button"
       ],
@@ -629,6 +693,8 @@
     {
       "name": "contact-block",
       "type": "registry:block",
+      "title": "Contact Block",
+      "description": "Contact form with animated contact info cards, working hours, and interactive icons",
       "registryDependencies": [
         "button",
         "card",
@@ -652,6 +718,8 @@
     {
       "name": "contact-form-section",
       "type": "registry:block",
+      "title": "Contact Form",
+      "description": "Contact form section with animated inputs, validation, and form handling",
       "registryDependencies": [
         "button",
         "card",
@@ -676,6 +744,8 @@
     {
       "name": "context-menu",
       "type": "registry:component",
+      "title": "Context Menu",
+      "description": "Right-click context menu with nested items animation",
       "registryDependencies": [
         "button"
       ],
@@ -696,6 +766,8 @@
     {
       "name": "context-menu-bubble",
       "type": "registry:component",
+      "title": "Context Menu Bubble",
+      "description": "Right-click reveals circular expanding radial menu with icons",
       "registryDependencies": [
         "button"
       ],
@@ -716,6 +788,8 @@
     {
       "name": "counter-up",
       "type": "registry:ui",
+      "title": "Animated Counter",
+      "description": "Number counter that animates up from zero",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion",
@@ -733,6 +807,8 @@
     {
       "name": "credit-card",
       "type": "registry:component",
+      "title": "Credit Card",
+      "description": "3D animated credit card with flip animation to show CVV",
       "registryDependencies": [
         "badge"
       ],
@@ -753,6 +829,8 @@
     {
       "name": "cta-banner-section",
       "type": "registry:page",
+      "title": "CTA Banner Section",
+      "description": "Animated call-to-action banner with gradient background and button animations",
       "registryDependencies": [
         "button",
         "card"
@@ -774,6 +852,8 @@
     {
       "name": "cta-block",
       "type": "registry:block",
+      "title": "CTA Block",
+      "description": "Call-to-action section with gradient overlay, animated buttons, and status indicator",
       "registryDependencies": [
         "button",
         "card"
@@ -794,6 +874,8 @@
     {
       "name": "cta-hero-block",
       "type": "registry:block",
+      "title": "CTA Hero Block",
+      "description": "Engaging hero section with email signup, video preview, and social proof",
       "registryDependencies": [
         "badge",
         "button",
@@ -817,6 +899,8 @@
     {
       "name": "currency-converter-card",
       "type": "registry:block",
+      "title": "Currency Converter Card",
+      "description": "Finance conversion widget with animated inputs, simulated exchange updates, and contextual feedback",
       "registryDependencies": [
         "button",
         "card"
@@ -838,6 +922,8 @@
     {
       "name": "dashboard",
       "type": "registry:block",
+      "title": "Dashboard",
+      "description": "Interactive stock portfolio dashboard with status cards, data table, and detailed stock information modal",
       "registryDependencies": [
         "badge",
         "button"
@@ -859,6 +945,8 @@
     {
       "name": "detail-task-card",
       "type": "registry:component",
+      "title": "Detail Task Card",
+      "description": "Task management detail panel with animated assignee chips and editor controls",
       "registryDependencies": [
         "badge",
         "button",
@@ -884,6 +972,8 @@
     {
       "name": "drag-to-confirm-slider",
       "type": "registry:component",
+      "title": "Drag-to-Confirm Slider",
+      "description": "Slider that activates action only when fully dragged to end",
       "registryDependencies": [
         "button"
       ],
@@ -904,6 +994,8 @@
     {
       "name": "draggable-list",
       "type": "registry:component",
+      "title": "Draggable List",
+      "description": "Reorderable list with drag and drop spring physics",
       "registryDependencies": [
         "button"
       ],
@@ -924,6 +1016,8 @@
     {
       "name": "dynamic-spotlight-cta",
       "type": "registry:page",
+      "title": "Dynamic Spotlight CTA",
+      "description": "Floating spotlight follows cursor to reveal gradient CTA text with premium effects",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion",
@@ -941,6 +1035,8 @@
     {
       "name": "dynamic-tag-cloud",
       "type": "registry:ui",
+      "title": "Dynamic Tag Cloud",
+      "description": "Floating cluster of tags that drift and rearrange when hovered",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion",
@@ -958,6 +1054,8 @@
     {
       "name": "ecommerce-highlight-card",
       "type": "registry:component",
+      "title": "Ecommerce Highlight Card",
+      "description": "Product spotlight card with blurred border, bundle selector, and fulfillment details",
       "registryDependencies": [
         "badge",
         "button",
@@ -981,6 +1079,8 @@
     {
       "name": "elastic-switch",
       "type": "registry:ui",
+      "title": "Elastic Toggle Switch",
+      "description": "Toggle switch with elastic spring animation",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion",
@@ -998,6 +1098,8 @@
     {
       "name": "expanding-search-dock",
       "type": "registry:component",
+      "title": "Expanding Search Dock",
+      "description": "Minimal search icon that expands into full input with blur",
       "registryDependencies": [
         "button"
       ],
@@ -1018,6 +1120,8 @@
     {
       "name": "fade-slide-modal",
       "type": "registry:component",
+      "title": "Fade & Slide Modal",
+      "description": "Modal with fade backdrop and slide-up animation",
       "registryDependencies": [
         "button"
       ],
@@ -1038,6 +1142,8 @@
     {
       "name": "faq-accordion-block",
       "type": "registry:block",
+      "title": "FAQ Accordion",
+      "description": "Expandable FAQ section with smooth accordion animations",
       "registryDependencies": [
         "badge",
         "button",
@@ -1060,6 +1166,8 @@
     {
       "name": "faq-section",
       "type": "registry:page",
+      "title": "FAQ Section",
+      "description": "Animated FAQ section with expandable questions and smooth transitions",
       "registryDependencies": [
         "card"
       ],
@@ -1080,6 +1188,8 @@
     {
       "name": "feature-cards-block",
       "type": "registry:block",
+      "title": "Feature Cards Grid",
+      "description": "Three feature cards with icons, hover effects, and glassmorphism styling",
       "registryDependencies": [
         "card"
       ],
@@ -1098,6 +1208,8 @@
     {
       "name": "feature-comparison-block",
       "type": "registry:block",
+      "title": "Feature Comparison Table",
+      "description": "Interactive pricing comparison table with animated checkmarks and plan highlights",
       "registryDependencies": [
         "badge",
         "button",
@@ -1120,6 +1232,8 @@
     {
       "name": "feature-grid-section",
       "type": "registry:page",
+      "title": "Feature Grid Section",
+      "description": "Animated feature grid with staggered card animations and icon reveals",
       "registryDependencies": [
         "card"
       ],
@@ -1140,6 +1254,8 @@
     {
       "name": "floating-gradient",
       "type": "registry:ui",
+      "title": "Floating Gradient",
+      "description": "Animated floating gradient background effect",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion"
@@ -1156,6 +1272,8 @@
     {
       "name": "floating-info-panel",
       "type": "registry:ui",
+      "title": "Floating Info Panel",
+      "description": "Info tooltip that drifts up/down while fading in/out intermittently",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion",
@@ -1173,6 +1291,8 @@
     {
       "name": "floating-label-input",
       "type": "registry:component",
+      "title": "Floating Label Input",
+      "description": "Input with animated floating label",
       "registryDependencies": [
         "input"
       ],
@@ -1192,6 +1312,8 @@
     {
       "name": "fluid-modal-transition",
       "type": "registry:component",
+      "title": "Fluid Modal Transition",
+      "description": "Modal that expands smoothly from clicked trigger element using layoutId",
       "registryDependencies": [
         "button"
       ],
@@ -1212,6 +1334,8 @@
     {
       "name": "footer-block",
       "type": "registry:block",
+      "title": "Footer Block",
+      "description": "Comprehensive footer with links, newsletter signup, social icons, and scroll-to-top",
       "registryDependencies": [
         "badge",
         "button",
@@ -1234,6 +1358,8 @@
     {
       "name": "gallery-grid-block",
       "type": "registry:block",
+      "title": "Gallery Grid with Lightbox",
+      "description": "Filterable image gallery with animated lightbox and navigation",
       "registryDependencies": [
         "badge",
         "button",
@@ -1256,6 +1382,8 @@
     {
       "name": "glass-account-settings-card",
       "type": "registry:component",
+      "title": "Glass Account Settings Card",
+      "description": "Account management card with subscription overview and billing actions in glassmorphic style",
       "registryDependencies": [
         "badge",
         "button",
@@ -1279,6 +1407,8 @@
     {
       "name": "glass-forgot-password-card",
       "type": "registry:component",
+      "title": "Glass Forgot Password Card",
+      "description": "Reset-password screen with glassmorphic styling and status messaging",
       "registryDependencies": [
         "button",
         "input",
@@ -1300,6 +1430,8 @@
     {
       "name": "glass-profile-settings-card",
       "type": "registry:component",
+      "title": "Glass Profile Settings Card",
+      "description": "Glassmorphic profile settings form with avatar upload, bio, and notification preferences",
       "registryDependencies": [
         "avatar",
         "badge",
@@ -1326,6 +1458,8 @@
     {
       "name": "glass-sign-in-card",
       "type": "registry:component",
+      "title": "Glass Sign-In Card",
+      "description": "Glassmorphic sign-in panel with social auth buttons and email form",
       "registryDependencies": [
         "button",
         "checkbox",
@@ -1349,6 +1483,8 @@
     {
       "name": "glass-sign-up-card",
       "type": "registry:component",
+      "title": "Glass Sign-Up Card",
+      "description": "Glassmorphic sign-up flow with social providers, email fields, and terms checkbox",
       "registryDependencies": [
         "button",
         "checkbox",
@@ -1372,6 +1508,8 @@
     {
       "name": "glass-verification-code-card",
       "type": "registry:component",
+      "title": "Glass Verification Code Card",
+      "description": "Verification code entry with glassmorphic inputs, status messaging, and reduced-motion support",
       "registryDependencies": [
         "button",
         "input"
@@ -1392,6 +1530,8 @@
     {
       "name": "glassmorphism-cta-block",
       "type": "registry:block",
+      "title": "Glassmorphism CTA",
+      "description": "Call-to-action section with glassy card, gradient background, and animated buttons",
       "registryDependencies": [
         "button",
         "card"
@@ -1412,6 +1552,8 @@
     {
       "name": "glassmorphism-hero-block",
       "type": "registry:block",
+      "title": "Glassmorphism Hero",
+      "description": "Modern hero section with glassmorphism effects, animated background orbs, and CTA buttons",
       "registryDependencies": [
         "button"
       ],
@@ -1430,6 +1572,8 @@
     {
       "name": "glassmorphism-launch-timeline-block",
       "type": "registry:block",
+      "title": "Glassmorphism Launch Timeline",
+      "description": "Frictionless launch roadmap with staggered motion, glassmorphism milestones, and paired CTA actions",
       "registryDependencies": [
         "badge",
         "button"
@@ -1450,6 +1594,8 @@
     {
       "name": "glassmorphism-listen-app-block",
       "type": "registry:block",
+      "title": "Glassmorphism Listen App",
+      "description": "Music streaming block with glassmorphism player, curated highlights, and animated controls",
       "registryDependencies": [
         "badge",
         "button",
@@ -1471,6 +1617,8 @@
     {
       "name": "glassmorphism-logo-showcase-block",
       "type": "registry:block",
+      "title": "Glassmorphism Logo Showcase",
+      "description": "Glassmorphism partner grid with floating motion, brand hints, and collaborative call-to-action",
       "registryDependencies": [
         "badge",
         "button"
@@ -1491,6 +1639,8 @@
     {
       "name": "glassmorphism-minimal-metrics-block",
       "type": "registry:block",
+      "title": "Glassmorphism Minimal Metrics",
+      "description": "Focused metric cards with glass surfaces, subtle motion, and concierge insight CTA banner",
       "registryDependencies": [
         "badge",
         "button",
@@ -1512,6 +1662,8 @@
     {
       "name": "glassmorphism-portfolio-block",
       "type": "registry:block",
+      "title": "Glassmorphism Portfolio",
+      "description": "Personal portfolio spotlight with profile portrait, narrative highlights, and animated social links",
       "registryDependencies": [
         "badge",
         "button"
@@ -1532,6 +1684,8 @@
     {
       "name": "glassmorphism-pricing-block",
       "type": "registry:block",
+      "title": "Glassmorphism Pricing",
+      "description": "Pricing cards with glassmorphism effects, hover animations, and feature lists",
       "registryDependencies": [
         "button",
         "card"
@@ -1551,6 +1705,8 @@
     {
       "name": "glassmorphism-product-update-block",
       "type": "registry:block",
+      "title": "Glassmorphism Product Updates",
+      "description": "Multi-state changelog cards with glass overlays, status badges, and GitHub integration banner",
       "registryDependencies": [
         "badge",
         "button",
@@ -1572,6 +1728,8 @@
     {
       "name": "glassmorphism-statistics-card",
       "type": "registry:component",
+      "title": "Glassmorphism Statistics Card",
+      "description": "Interactive statistics card with hover reveal and smooth transitions",
       "registryDependencies": [
         "card"
       ],
@@ -1592,6 +1750,8 @@
     {
       "name": "glassmorphism-testimonials-block",
       "type": "registry:block",
+      "title": "Glassmorphism Testimonials",
+      "description": "Customer testimonials with glassmorphism cards, star ratings, and hover effects",
       "registryDependencies": [
         "card"
       ],
@@ -1610,6 +1770,8 @@
     {
       "name": "glowy-waves-hero",
       "type": "registry:block",
+      "title": "Glowy Waves Hero",
+      "description": "Hero section with glowy waves effect",
       "registryDependencies": [
         "button"
       ],
@@ -1630,6 +1792,8 @@
     {
       "name": "gradient-animation",
       "type": "registry:ui",
+      "title": "Gradient Animation",
+      "description": "Smoothly transitioning gradient background",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion"
@@ -1646,6 +1810,8 @@
     {
       "name": "heart-favorite",
       "type": "registry:ui",
+      "title": "Heart Favorite",
+      "description": "Animated heart icon for like/favorite actions",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion",
@@ -1664,6 +1830,8 @@
     {
       "name": "hero-block",
       "type": "registry:block",
+      "title": "Hero Block",
+      "description": "Personal portfolio hero section with animated avatar, staggered text, social links, and scroll indicator",
       "registryDependencies": [
         "button"
       ],
@@ -1683,6 +1851,8 @@
     {
       "name": "hero-section",
       "type": "registry:page",
+      "title": "Hero Section",
+      "description": "Hero section with staggered text and button reveal",
       "registryDependencies": [
         "button"
       ],
@@ -1702,6 +1872,8 @@
     {
       "name": "holographic-wall",
       "type": "registry:ui",
+      "title": "Holographic Wall",
+      "description": "Black wall with Pharaonic hieroglyphs and golden cursor light reflection",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion",
@@ -1719,6 +1891,8 @@
     {
       "name": "hover-expand-card",
       "type": "registry:component",
+      "title": "Hover Expand Card",
+      "description": "Card that lifts and expands on hover",
       "registryDependencies": [
         "badge"
       ],
@@ -1737,6 +1911,8 @@
     {
       "name": "image-slider-card",
       "type": "registry:component",
+      "title": "Accessible Image Slider Card",
+      "description": "Image carousel card with keyboard support, reduced motion handling, and screen reader-friendly labels",
       "registryDependencies": [
         "button",
         "card"
@@ -1758,6 +1934,8 @@
     {
       "name": "interactive-logs-table",
       "type": "registry:block",
+      "title": "Interactive Logs Table",
+      "description": "Observability logs panel with animated filters, search, and expandable rows",
       "registryDependencies": [
         "badge",
         "button",
@@ -1780,6 +1958,8 @@
     {
       "name": "interactive-timeline",
       "type": "registry:component",
+      "title": "Interactive Timeline",
+      "description": "Vertical timeline where elements animate and connect with lines on scroll",
       "registryDependencies": [
         "button"
       ],
@@ -1799,6 +1979,8 @@
     {
       "name": "mac-searchbar",
       "type": "registry:component",
+      "title": "Mac Searchbar",
+      "description": "Mac-style searchbar with animated dropdown, glassmorphism effects, and smooth transitions",
       "registryDependencies": [
         "button"
       ],
@@ -1819,6 +2001,8 @@
     {
       "name": "magnetic-avatar-group",
       "type": "registry:component",
+      "title": "Magnetic Avatar Group",
+      "description": "Stacked avatars that spread apart on hover showing tooltips",
       "registryDependencies": [
         "button"
       ],
@@ -1838,6 +2022,8 @@
     {
       "name": "magnetic-button",
       "type": "registry:ui",
+      "title": "Magnetic Button",
+      "description": "Button that magnetically follows your cursor",
       "registryDependencies": [
         "button"
       ],
@@ -1857,6 +2043,8 @@
     {
       "name": "magnetic-cursor-link",
       "type": "registry:ui",
+      "title": "Magnetic Cursor Link",
+      "description": "Link that slightly follows mouse cursor within boundary and snaps back",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion",
@@ -1874,6 +2062,8 @@
     {
       "name": "messenger",
       "type": "registry:component",
+      "title": "Messenger",
+      "description": "Glassmorphism messenger workspace with accessible motion and quick replies",
       "registryDependencies": [
         "avatar",
         "badge",
@@ -1898,6 +2088,8 @@
     {
       "name": "mood-gradient-button",
       "type": "registry:ui",
+      "title": "Mood Gradient Button",
+      "description": "Button with background gradient that shifts based on hover angle",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion",
@@ -1915,6 +2107,8 @@
     {
       "name": "morphing-action-button",
       "type": "registry:ui",
+      "title": "Morphing Action Button",
+      "description": "A circular FAB that morphs into a rectangular action panel using layoutId",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion",
@@ -1933,6 +2127,8 @@
     {
       "name": "multiple-accounts",
       "type": "registry:component",
+      "title": "Multiple Accounts Switcher",
+      "description": "Glassmorphic account switcher with animated dropdown and accessible listbox controls",
       "registryDependencies": [
         "button"
       ],
@@ -1953,6 +2149,8 @@
     {
       "name": "n8n-workflow-block",
       "type": "registry:block",
+      "title": "N8N Workflow Block",
+      "description": "Visual workflow automation builder with animated nodes, connections, and real-time execution monitoring",
       "registryDependencies": [
         "badge",
         "button",
@@ -1976,6 +2174,8 @@
     {
       "name": "new-hero-section",
       "type": "registry:block",
+      "title": "New Hero Section",
+      "description": "Modern hero section with gradient background, animated stats, and call-to-action buttons",
       "registryDependencies": [
         "button"
       ],
@@ -1995,6 +2195,8 @@
     {
       "name": "newsletter-signup-block",
       "type": "registry:block",
+      "title": "Newsletter Signup Block",
+      "description": "Animated newsletter subscription form with success state and gradient background",
       "registryDependencies": [
         "badge",
         "button",
@@ -2018,6 +2220,8 @@
     {
       "name": "notification-bell",
       "type": "registry:ui",
+      "title": "Notification Bell",
+      "description": "Bell icon that gently swings when new notification appears",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion",
@@ -2036,6 +2240,8 @@
     {
       "name": "notification-center",
       "type": "registry:component",
+      "title": "Notification Center",
+      "description": "Multi-variant notification stack with accessible announcements, actions, and motion states",
       "registryDependencies": [
         "button",
         "card"
@@ -2057,6 +2263,8 @@
     {
       "name": "notion-blog-page",
       "type": "registry:block",
+      "title": "Notion Blog Page",
+      "description": "Notion-style publishing playbook with rich text, toggles, and supporting visuals",
       "registryDependencies": [
         "button"
       ],
@@ -2077,6 +2285,8 @@
     {
       "name": "our-services-section",
       "type": "registry:block",
+      "title": "Our Services",
+      "description": "Services section with service cards, badges, icons, and hover animations",
       "registryDependencies": [
         "badge",
         "button",
@@ -2098,6 +2308,8 @@
     {
       "name": "password-input",
       "type": "registry:component",
+      "title": "Password Input",
+      "description": "Password input with toggle visibility and strength indicator",
       "registryDependencies": [
         "button"
       ],
@@ -2118,6 +2330,8 @@
     {
       "name": "preview-details-card",
       "type": "registry:ui",
+      "title": "Preview Details Card",
+      "description": "Link card that reveals a smooth detail preview box on hover",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion",
@@ -2136,6 +2350,8 @@
     {
       "name": "pricing-section",
       "type": "registry:page",
+      "title": "Pricing Section",
+      "description": "Animated pricing cards with hover effects and feature lists",
       "registryDependencies": [
         "badge",
         "button",
@@ -2158,6 +2374,8 @@
     {
       "name": "projects-block",
       "type": "registry:component",
+      "title": "Projects Block",
+      "description": "Animated project card with hover effects, image zoom, and link buttons",
       "registryDependencies": [
         "badge",
         "card"
@@ -2178,6 +2396,8 @@
     {
       "name": "reactive-background-grid",
       "type": "registry:ui",
+      "title": "Reactive Background Grid",
+      "description": "Background pattern that reacts to mouse movement and click ripples",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion",
@@ -2195,6 +2415,8 @@
     {
       "name": "ripple-click-button",
       "type": "registry:ui",
+      "title": "Ripple Click Effect",
+      "description": "Material design inspired ripple effect on click",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion",
@@ -2212,6 +2434,8 @@
     {
       "name": "scale-hover-button",
       "type": "registry:ui",
+      "title": "Scale Hover Button",
+      "description": "A button that scales up smoothly on hover",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion"
@@ -2228,6 +2452,8 @@
     {
       "name": "scroll-progress-tracker",
       "type": "registry:page",
+      "title": "Scroll Progress Tracker",
+      "description": "Fixed progress bar that follows scroll and glows on section changes",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion",
@@ -2245,6 +2471,8 @@
     {
       "name": "scroll-reveal",
       "type": "registry:page",
+      "title": "Scroll Reveal",
+      "description": "Section that animates into view on scroll with intersection observer",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion",
@@ -2263,6 +2491,8 @@
     {
       "name": "services-grid-block",
       "type": "registry:block",
+      "title": "Services Grid",
+      "description": "8-column responsive services grid with icons, features, and hover effects",
       "registryDependencies": [
         "badge",
         "button",
@@ -2284,6 +2514,8 @@
     {
       "name": "shimmer-button",
       "type": "registry:ui",
+      "title": "Shimmer Button",
+      "description": "Button with continuous shimmer effect",
       "registryDependencies": [
         "button"
       ],
@@ -2302,6 +2534,8 @@
     {
       "name": "simple-calendar",
       "type": "registry:component",
+      "title": "Simple Calendar",
+      "description": "Calendar picker with date selection animation",
       "registryDependencies": [
         "button"
       ],
@@ -2322,6 +2556,8 @@
     {
       "name": "smart-hover-card",
       "type": "registry:component",
+      "title": "Smart Hover Card",
+      "description": "Card that detects cursor direction and reveals content from that side",
       "registryDependencies": [
         "button",
         "card"
@@ -2342,6 +2578,8 @@
     {
       "name": "spotlight-section",
       "type": "registry:ui",
+      "title": "Spotlight Section",
+      "description": "Container where mouse creates soft radial spotlight following cursor",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion",
@@ -2359,6 +2597,8 @@
     {
       "name": "stacked-card-carousel",
       "type": "registry:component",
+      "title": "Stacked Card Carousel",
+      "description": "Three stacked cards that shift and tilt dynamically on hover",
       "registryDependencies": [
         "button",
         "card"
@@ -2379,6 +2619,8 @@
     {
       "name": "staggered-dropdown",
       "type": "registry:component",
+      "title": "Staggered Dropdown",
+      "description": "Dropdown menu with staggered item animations",
       "registryDependencies": [
         "button"
       ],
@@ -2399,6 +2641,8 @@
     {
       "name": "staggered-hero",
       "type": "registry:page",
+      "title": "Staggered Text Hero",
+      "description": "Hero section with staggered text reveal",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion"
@@ -2415,6 +2659,8 @@
     {
       "name": "stats-counter-block",
       "type": "registry:block",
+      "title": "Stats Counter Block",
+      "description": "Animated statistics counters with icons and gradient backgrounds",
       "registryDependencies": [
         "badge",
         "card"
@@ -2436,6 +2682,8 @@
     {
       "name": "stats-section",
       "type": "registry:page",
+      "title": "Stats Section",
+      "description": "Animated statistics section with cards and counters",
       "registryDependencies": [
         "card"
       ],
@@ -2456,6 +2704,8 @@
     {
       "name": "stocks-dashboard",
       "type": "registry:block",
+      "title": "Stocks Dashboard",
+      "description": "Interactive stock portfolio dashboard with status cards, data table, and detailed stock information modal",
       "registryDependencies": [
         "badge",
         "card",
@@ -2478,6 +2728,8 @@
     {
       "name": "team-section-block",
       "type": "registry:block",
+      "title": "Team Section Block",
+      "description": "Animated team member cards with avatars, roles, and social links",
       "registryDependencies": [
         "badge",
         "button",
@@ -2500,6 +2752,8 @@
     {
       "name": "testimonial-section",
       "type": "registry:page",
+      "title": "Testimonial Section",
+      "description": "Carousel-style testimonial section with smooth transitions",
       "registryDependencies": [
         "button",
         "card"
@@ -2521,6 +2775,8 @@
     {
       "name": "testimonials-block",
       "type": "registry:block",
+      "title": "Testimonials Block",
+      "description": "Animated testimonials grid with staggered cards, star ratings, and hover effects",
       "registryDependencies": [
         "card"
       ],
@@ -2540,6 +2796,8 @@
     {
       "name": "timeline-block",
       "type": "registry:block",
+      "title": "Timeline Block",
+      "description": "Vertical timeline with alternating cards and animated progress line",
       "registryDependencies": [
         "badge",
         "card"
@@ -2561,6 +2819,8 @@
     {
       "name": "toast-notification",
       "type": "registry:page",
+      "title": "Toast Notification",
+      "description": "Animated toast notification popup",
       "registryDependencies": [
         "button",
         "card"
@@ -2582,6 +2842,8 @@
     {
       "name": "typewriter-text",
       "type": "registry:ui",
+      "title": "Typewriter Effect",
+      "description": "Text that types out character by character",
       "registryDependencies": [],
       "dependencies": [
         "framer-motion"
@@ -2598,6 +2860,8 @@
     {
       "name": "weather-dashboard",
       "type": "registry:component",
+      "title": "Weather Dashboard",
+      "description": "Immersive weather dashboard with hourly charting, weekly outlook, and live air-quality alerts",
       "registryDependencies": [
         "badge",
         "button"
@@ -2616,6 +2880,5 @@
       "category": "components",
       "subcategory": null
     }
-  ],
-  "homepage": "https://ui.tripled.work"
+  ]
 }

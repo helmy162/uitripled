@@ -98,6 +98,20 @@ function parseComponentsRegistry() {
 
     const id = idMatch[1];
 
+    // Extract name (title)
+    const nameMatch = entryText.match(/name:\s*"([^"]+)"/);
+    const name = nameMatch ? nameMatch[1] : null;
+
+    // Extract description (handle multi-line descriptions)
+    // Match description: followed by optional whitespace/newline and then quoted string
+    // Use [\s\S] to match any character including newlines
+    const descriptionMatch = entryText.match(
+      /description:\s*"((?:[^"\\]|\\.|[\s\S])*?)"/
+    );
+    const description = descriptionMatch
+      ? descriptionMatch[1].replace(/\\"/g, '"').replace(/\\n/g, "\n").trim()
+      : null;
+
     // Extract category
     const categoryMatch = entryText.match(/category:\s*"([^"]+)"/);
     if (!categoryMatch) continue;
@@ -114,6 +128,8 @@ function parseComponentsRegistry() {
     if (componentPath) {
       entries.push({
         id,
+        name,
+        description,
         category,
         componentName,
         componentPath,
@@ -252,24 +268,36 @@ function getSubcategory(componentPath, category) {
  * Create registry entry from component data
  */
 function createRegistryEntry(componentData) {
-  const { id, name, category, componentPath } = componentData;
+  const { id, name, description, category, componentPath } = componentData;
   const registryCategory = CATEGORY_MAPPING[category] || category;
   const registryType = CATEGORY_TO_TYPE[category] || "registry:component";
 
-  return {
+  const entry = {
     name: id,
     type: registryType,
-    registryDependencies: getRegistryDependencies(componentPath, category),
-    dependencies: getDependencies(componentPath),
-    files: [
-      {
-        path: convertToRegistryPath(componentPath),
-        type: registryType,
-      },
-    ],
-    category: registryCategory,
-    subcategory: getSubcategory(componentPath, registryCategory),
   };
+
+  // Add title and description before registryDependencies
+  if (name) {
+    entry.title = name;
+  }
+  if (description) {
+    entry.description = description;
+  }
+
+  // Add the rest of the fields
+  entry.registryDependencies = getRegistryDependencies(componentPath, category);
+  entry.dependencies = getDependencies(componentPath);
+  entry.files = [
+    {
+      path: convertToRegistryPath(componentPath),
+      type: registryType,
+    },
+  ];
+  entry.category = registryCategory;
+  entry.subcategory = getSubcategory(componentPath, registryCategory);
+
+  return entry;
 }
 
 /**
@@ -299,23 +327,33 @@ function syncRegistry() {
       const existing = existingItemsMap.get(component.id);
 
       if (existing) {
-        // Update existing entry - always update path, preserve dependencies if they exist
+        // Update existing entry - rebuild in correct order
         const updatedEntry = {
-          ...existing,
+          name: existing.name,
           type: registryEntry.type,
-          files: registryEntry.files, // Always update path
-          category: registryEntry.category,
-          subcategory: registryEntry.subcategory,
-          // Preserve existing dependencies if they exist, otherwise use defaults
-          dependencies:
-            existing.dependencies?.length > 0
-              ? existing.dependencies
-              : registryEntry.dependencies,
-          registryDependencies:
-            existing.registryDependencies?.length > 0
-              ? existing.registryDependencies
-              : registryEntry.registryDependencies,
         };
+
+        // Add title and description before registryDependencies
+        if (registryEntry.title || existing.title) {
+          updatedEntry.title = registryEntry.title || existing.title;
+        }
+        if (registryEntry.description || existing.description) {
+          updatedEntry.description =
+            registryEntry.description || existing.description;
+        }
+
+        // Add the rest of the fields
+        updatedEntry.registryDependencies =
+          existing.registryDependencies?.length > 0
+            ? existing.registryDependencies
+            : registryEntry.registryDependencies;
+        updatedEntry.dependencies =
+          existing.dependencies?.length > 0
+            ? existing.dependencies
+            : registryEntry.dependencies;
+        updatedEntry.files = registryEntry.files; // Always update path
+        updatedEntry.category = registryEntry.category;
+        updatedEntry.subcategory = registryEntry.subcategory;
 
         existingItemsMap.set(component.id, updatedEntry);
         updated++;
