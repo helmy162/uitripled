@@ -111,7 +111,8 @@ const buildPageCode = async (
         const response = await fetch(`/api/registry/${component.animation.id}`);
         if (response.ok) {
           const data = await response.json();
-          animationCode = data.code;
+          // The API returns files array with content property
+          animationCode = data.files?.[0]?.content || data.code;
         } else {
           console.warn(
             `Failed to load code for component ${component.animation.id}: ${response.status}`

@@ -2,20 +2,21 @@ import PreviewProjectPageClient from "./PreviewProjectPage.client";
 import { createMetadata } from "@/lib/seo";
 
 type PreviewPageProps = {
-  params: {
+  params: Promise<{
     projectName: string;
-  };
+  }>;
 };
 
-export function generateMetadata({ params }: PreviewPageProps) {
-  const projectLabel = params.projectName
+export async function generateMetadata({ params }: PreviewPageProps) {
+  const { projectName } = await params;
+  const projectLabel = projectName
     .replace(/[-_]/g, " ")
     .replace(/\b\w/g, (char) => char.toUpperCase());
 
   return createMetadata({
     title: `${projectLabel} Preview`,
     description: `Live preview for the ${projectLabel} project generated with the UI TripleD motion builder.`,
-    path: `/preview/${params.projectName}`,
+    path: `/preview/${projectName}`,
     index: false,
   });
 }

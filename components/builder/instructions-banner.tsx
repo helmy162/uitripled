@@ -31,6 +31,13 @@ export function InstructionsBanner({ show, onHide }: InstructionsBannerProps) {
                   <li className="flex items-start gap-2">
                     <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
                     <span>
+                      The builder is just for previewing, not a final production
+                      setup
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
+                    <span>
                       The builder is currently in beta and may have some bugs
                       and limitations
                     </span>
