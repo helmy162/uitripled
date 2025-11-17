@@ -1,4 +1,4 @@
-import { Animation, AnimationCategory } from "@/types";
+import { Component, ComponentCategory } from "@/types";
 import { getComponentCode } from "./file-reader";
 
 // Import all animation components
@@ -140,7 +140,7 @@ import { DashboardPage } from "@/components/components/stocks-dashboard/dashboar
 import { BrowseFolder } from "@/components/sections/browse-folder";
 import { GlowyWavesHero } from "@/components/sections/glowy-waves-hero";
 
-export const animationRegistry: Animation[] = [
+export const componentsRegistry: Component[] = [
   {
     id: "scale-hover-button",
     name: "Scale Hover Button",
@@ -1898,22 +1898,22 @@ export const animationRegistry: Animation[] = [
   },
 ];
 
-export function getAnimationById(id: string): Animation | undefined {
-  return animationRegistry.find((anim) => anim.id === id);
+export function getComponentById(id: string): Component | undefined {
+  return componentsRegistry.find((component) => component.id === id);
 }
 
 export function getAnimationsByCategory(
-  category: AnimationCategory,
-): Animation[] {
-  return animationRegistry.filter((anim) => anim.category === category);
+  category: ComponentCategory,
+): Component[] {
+  return componentsRegistry.filter((component) => component.category === category);
 }
 
-export function searchAnimations(query: string): Animation[] {
+export function searchComponents(query: string): Component[] {
   const lowerQuery = query.toLowerCase();
-  return animationRegistry.filter(
-    (anim) =>
-      anim.name.toLowerCase().includes(lowerQuery) ||
-      anim.description.toLowerCase().includes(lowerQuery) ||
-      anim.tags.some((tag) => tag.toLowerCase().includes(lowerQuery)),
+  return componentsRegistry.filter(
+    (component) =>
+      component.name.toLowerCase().includes(lowerQuery) ||
+      component.description.toLowerCase().includes(lowerQuery) ||
+      component.tags.some((tag) => tag.toLowerCase().includes(lowerQuery)),
   );
 }

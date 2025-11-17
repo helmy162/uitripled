@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { animationRegistry, getAnimationById } from "@/lib/components-registry";
+import { componentsRegistry, getComponentById } from "@/lib/components-registry";
 
 /**
  * GET handler for registry
@@ -18,9 +18,9 @@ export async function GET(
 
     // If name is provided, return specific component
     if (name && name !== "index") {
-      const animation = getAnimationById(name);
+      const component = getComponentById(name);
       
-      if (!animation) {
+      if (!component) {
         return NextResponse.json(
           { error: `Component "${name}" not found` },
           { status: 404 }
@@ -30,15 +30,15 @@ export async function GET(
       // Return component data
       return NextResponse.json(
         {
-          id: animation.id,
-          name: animation.name,
-          description: animation.description,
-          category: animation.category,
-          tags: animation.tags,
-          duration: animation.duration,
-          easing: animation.easing,
-          display: animation.display,
-          code: animation.code,
+          id: component.id,
+          name: component.name,
+          description: component.description,
+          category: component.category,
+          tags: component.tags,
+          duration: component.duration,
+          easing: component.easing,
+          display: component.display,
+          code: component.code,
         },
         {
           headers: {
@@ -51,15 +51,15 @@ export async function GET(
     }
 
     // Return full registry (all components)
-    const registry = animationRegistry.map((anim) => ({
-      id: anim.id,
-      name: anim.name,
-      description: anim.description,
-      category: anim.category,
-      tags: anim.tags,
-      duration: anim.duration,
-      easing: anim.easing,
-      display: anim.display,
+      const registry = componentsRegistry.map((component) => ({
+      id: component.id,
+      name: component.name,
+      description: component.description,
+      category: component.category,
+      tags: component.tags,
+      duration: component.duration,
+      easing: component.easing,
+      display: component.display,
     }));
 
     return NextResponse.json(

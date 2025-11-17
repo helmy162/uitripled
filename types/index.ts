@@ -1,4 +1,4 @@
-export type AnimationCategory =
+export type ComponentCategory =
   | "microinteractions"
   | "components"
   | "page"
@@ -6,11 +6,11 @@ export type AnimationCategory =
   | "decorative"
   | "blocks";
 
-export type Animation = {
+export type Component = {
   id: string;
   name: string;
   description: string;
-  category: AnimationCategory;
+  category: ComponentCategory;
   tags: string[];
   component: React.ComponentType<any>;
   code: string;
@@ -20,7 +20,7 @@ export type Animation = {
   display?: boolean;
 };
 
-export const categoryNames: Record<AnimationCategory, string> = {
+export const categoryNames: Record<ComponentCategory, string> = {
   microinteractions: "Microinteractions",
   components: "Components",
   page: "Page Transitions",
@@ -29,7 +29,7 @@ export const categoryNames: Record<AnimationCategory, string> = {
   blocks: "Blocks",
 };
 
-export const categoryDescriptions: Record<AnimationCategory, string> = {
+export const categoryDescriptions: Record<ComponentCategory, string> = {
   microinteractions:
     "Small, delightful interactions for buttons, toggles, and icons",
   components: "Animated UI components like modals, dropdowns, and cards",
