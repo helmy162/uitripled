@@ -60,14 +60,25 @@ function generateRegistryFiles() {
               throw new Error(`File is empty: ${file.path}`);
             }
 
-            // Generate target path: extract filename from path
+            // Generate target path: extract component name from path
             // path format: components/component-name.tsx
-            // target format: component-name.tsx (for CLI to install in appropriate components directory)
+            // target format: components/component-name (without .tsx extension)
             let targetPath = file.target;
             if (!targetPath) {
-              // Extract filename from path (e.g., "components/about-us-page.tsx" -> "about-us-page.tsx")
-              const pathParts = file.path.split("/");
-              targetPath = pathParts[pathParts.length - 1];
+              // Extract component name and format as components/component-name
+              // e.g., "components/about-us-page.tsx" -> "components/about-us-page"
+              if (
+                file.path.startsWith("components/") &&
+                file.path.endsWith(".tsx")
+              ) {
+                targetPath = file.path.slice(0, -4); // Remove .tsx extension
+              } else {
+                // Fallback: extract filename and remove extension
+                const pathParts = file.path.split("/");
+                const filename = pathParts[pathParts.length - 1];
+                const componentName = filename.replace(/\.tsx?$/, "");
+                targetPath = `components/${componentName}`;
+              }
             }
 
             return {
@@ -81,11 +92,23 @@ function generateRegistryFiles() {
               error instanceof Error ? error.message : String(error);
             console.error(`Error reading file ${file.path}:`, errorMessage);
             // Return file with error message in content
-            // Extract filename for target even on error
+            // Extract component name for target even on error
             let targetPath = file.target;
             if (!targetPath) {
-              const pathParts = file.path.split("/");
-              targetPath = pathParts[pathParts.length - 1];
+              // Extract component name and format as components/component-name
+              // e.g., "components/about-us-page.tsx" -> "components/about-us-page"
+              if (
+                file.path.startsWith("components/") &&
+                file.path.endsWith(".tsx")
+              ) {
+                targetPath = file.path.slice(0, -4); // Remove .tsx extension
+              } else {
+                // Fallback: extract filename and remove extension
+                const pathParts = file.path.split("/");
+                const filename = pathParts[pathParts.length - 1];
+                const componentName = filename.replace(/\.tsx?$/, "");
+                targetPath = `components/${componentName}`;
+              }
             }
             return {
               path: file.path,
