@@ -501,52 +501,9 @@ export default function AnimationDetailPageClient({ code }: { code: string }) {
                   2
                 </span>
                 <span>
-                  Install this component using shadcn:{" "}
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    <code className="rounded border border-border bg-muted px-1.5 py-0.5 text-xs">
-                      npx shadcn@latest add @uitripled/{component.id}
-                    </code>
-                  </div>
-                </span>
-              </li>
-              {requiresShadcn && (
-                <li className="flex gap-3">
-                  <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded border border-primary bg-primary text-xs font-medium text-primary-foreground">
-                    3
-                  </span>
-                  <span>
-                    <strong className="text-foreground">
-                      Set up shadcn/ui:
-                    </strong>{" "}
-                    Install shadcn/ui components used in this code. Check the
-                    imports in the code above and install the required
-                    components (e.g.,{" "}
-                    <code className="rounded border border-border bg-muted px-1.5 py-0.5 text-xs">
-                      npx shadcn-ui@latest add button card
-                    </code>
-                    )
-                  </span>
-                </li>
-              )}
-              <li className="flex gap-3">
-                <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded border border-primary bg-primary text-xs font-medium text-primary-foreground">
-                  {requiresShadcn ? "4" : "3"}
-                </span>
-                <span>Copy the code from above</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded border border-primary bg-primary text-xs font-medium text-primary-foreground">
-                  {requiresShadcn ? "5" : "4"}
-                </span>
-                <span>Paste it into your project and customize as needed</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded border border-primary bg-primary text-xs font-medium text-primary-foreground">
-                  {requiresShadcn ? "6" : "5"}
-                </span>
-                <span>
                   Colors are customizable via Tailwind CSS classes. The default
-                  theme uses dark mode colors defined in your globals.css file
+                  theme uses dark mode colors defined in your <b>globals.css</b>{" "}
+                  file
                 </span>
               </li>
             </ol>
