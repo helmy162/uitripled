@@ -19,11 +19,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 
-function ComponentsLayoutContent({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+function ComponentsLayoutContent({ children }: { children: React.ReactNode }) {
   const params = useParams();
   const pathname = usePathname();
   const router = useRouter();
@@ -278,7 +274,13 @@ export default function ComponentsLayout({
   children: React.ReactNode;
 }) {
   return (
-    <Suspense fallback={<div className="flex h-screen items-center justify-center">Loading...</div>}>
+    <Suspense
+      fallback={
+        <div className="flex h-screen items-center justify-center">
+          Loading...
+        </div>
+      }
+    >
       <ComponentsLayoutContent>{children}</ComponentsLayoutContent>
     </Suspense>
   );

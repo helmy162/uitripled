@@ -27,14 +27,13 @@ export function AnimationsSidebar({
     Set<ComponentCategory | "all">
   >(new Set(["all"]));
 
-  // Effect to control expanded categories based on target parameter
+  // Effect to control expanded categories based on target parameter or selected component
   useEffect(() => {
     if (target) {
       const normalizedTarget = target.toLowerCase();
 
       // Check if target is a valid category
       const validCategories: Array<string> = [
-        "all",
         "blocks",
         "microinteractions",
         "components",
@@ -46,19 +45,34 @@ export function AnimationsSidebar({
 
       if (validCategories.includes(normalizedTarget)) {
         // Close all categories and open only the target
-        setExpandedCategories(new Set([normalizedTarget as ComponentCategory | "all"]));
+        setExpandedCategories(
+          new Set([normalizedTarget as ComponentCategory | "all"])
+        );
       } else {
         // Target not found, open "all" by default
         setExpandedCategories(new Set(["all"]));
       }
+    } else if (selectedComponent) {
+      // If a component is selected, ensure its category is open
+      // Keep other manually opened categories, but close "all" if it was the only one open
+      setExpandedCategories((prev) => {
+        const next = new Set(prev);
+        // Add the component's category to the expanded set
+        next.add(selectedComponent.category);
+        // If only "all" was open, replace it with the component's category
+        if (prev.size === 1 && prev.has("all")) {
+          return new Set([selectedComponent.category]);
+        }
+        // Otherwise, keep existing categories and add the component's category
+        return next;
+      });
     } else {
-      // No target, open "all" by default
+      // No target or selected component, open "all" by default
       setExpandedCategories(new Set(["all"]));
     }
-  }, [target]);
+  }, [target, selectedComponent]);
 
   const categories: Array<ComponentCategory | "all"> = [
-    "all",
     "blocks",
     "microinteractions",
     "components",
