@@ -2754,6 +2754,25 @@
       "subcategory": "hero"
     },
     {
+      "name": "standard-resume",
+      "type": "registry:component",
+      "title": "Standard Resume",
+      "description": "A standard, professional resume layout with a sidebar, suitable for most industries.",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/resumes/standard-resume.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "resumes",
+      "subcategory": null
+    },
+    {
       "name": "stats-counter-block",
       "type": "registry:block",
       "title": "Stats Counter Block",

@@ -106,7 +106,8 @@ export function BuilderSidebar({
     return componentsRegistry
       .filter(
         (component) =>
-          component.display !== false && component.category === "blocks"
+          component.display !== false &&
+          (component.category === "blocks" || component.category === "resumes")
       )
       .filter((component) => {
         if (!query) return true;
@@ -140,7 +141,7 @@ export function BuilderSidebar({
             {categoryNames.blocks}
           </span>
           <span className="rounded-full bg-muted px-3 py-1 text-xs font-medium text-muted-foreground">
-            Only blocks allowed
+            Only blocks/resumes allowed
           </span>
         </div>
         {!allowDrag && (

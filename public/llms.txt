@@ -2,11 +2,11 @@
 
 > Production-ready UI components, blocks, and pages built on top of shadcn/ui and Framer Motion.
 
-**Last Updated:** 2025-11-26T04:26:27.343Z
+**Last Updated:** 2025-11-27T06:37:29.698Z
 
 ## Table of Contents
 
-- Components (59 items)
+- Components (60 items)
 - Blocks (38 items)
 - Pages (14 items)
 - UI Elements (26 items)
@@ -102,6 +102,7 @@
 - [Interactive Resume Card](https://ui.tripled.work/components/resume-card): Professional resume template with animated sections and interactive elements
 - [Minimal Resume](https://ui.tripled.work/components/minimal-resume): Vercel-inspired minimal resume with clean typography and grid layout
 - [Professional Resume](https://ui.tripled.work/components/professional-resume): Clean, formal resume template suitable for corporate applications
+- [Standard Resume](https://ui.tripled.work/components/standard-resume): A standard, professional resume layout with a sidebar, suitable for most industries.
 
 ### Blocks
 

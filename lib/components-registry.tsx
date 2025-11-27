@@ -111,6 +111,7 @@ import { N8nWorkflowBlock } from "@/components/sections/n8n-workflow-block";
 import { ResumeCard } from "@/components/components/resumes/resume-card";
 import { ProfessionalResume } from "@/components/components/resumes/professional-resume";
 import { MinimalResume } from "@/components/components/resumes/minimal-resume";
+import { StandardResume } from "@/components/components/resumes/standard-resume";
 
 // UI-TripleD Components
 import { MorphingActionButton } from "@/components/motion-core/morphing-action-button";
@@ -415,6 +416,19 @@ export const componentsRegistry: Component[] = [
     component: MinimalResume,
     codePath: "@/components/components/resumes/minimal-resume.tsx",
     duration: "400ms",
+    easing: "easeOut",
+    display: true,
+  },
+  {
+    id: "standard-resume",
+    name: "Standard Resume",
+    description:
+      "A standard, professional resume layout with a sidebar, suitable for most industries.",
+    category: "resumes",
+    tags: ["resume", "cv", "standard", "classic", "sidebar"],
+    component: StandardResume,
+    codePath: "@/components/components/resumes/standard-resume.tsx",
+    duration: "500ms",
     easing: "easeOut",
     display: true,
   },

@@ -71,7 +71,7 @@ export function BuilderHeader({
             <FolderOpen className="mr-2 h-4 w-4" />
             Load Project
           </Button>
-          <Button
+          {/* <Button
             variant={isTextEditing ? "default" : "outline"}
             size="sm"
             onClick={onToggleTextEditing}
@@ -80,7 +80,7 @@ export function BuilderHeader({
           >
             <Type className="h-4 w-4" />
             {isTextEditing ? "Done editing" : "Edit text"}
-          </Button>
+          </Button> */}
         </div>
       </div>
     </div>
