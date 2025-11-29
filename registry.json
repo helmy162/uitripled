@@ -579,6 +579,27 @@
       "subcategory": null
     },
     {
+      "name": "blog-typography",
+      "type": "registry:component",
+      "title": "Blog Typography",
+      "description": "Beautiful blog post typography with text, links, images, blockquotes, and code examples",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/blog/blog-typography.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
       "name": "bottom-modal",
       "type": "registry:component",
       "title": "Bottom Modal",
@@ -684,6 +705,27 @@
       "files": [
         {
           "path": "components/search/command-palette.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "comment-thread",
+      "type": "registry:component",
+      "title": "Comment Thread",
+      "description": "Nested comment thread with rich interactions and animations",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/comments/comment-thread.tsx",
           "type": "registry:component"
         }
       ],
@@ -803,6 +845,27 @@
       ],
       "category": "data",
       "subcategory": "progress"
+    },
+    {
+      "name": "course-content-page",
+      "type": "registry:component",
+      "title": "Course Content Page",
+      "description": "Interactive course page with video player, instructor details, curriculum sections, and progress tracking",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/course-content/course-content-page.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
     },
     {
       "name": "credit-card",
@@ -2252,6 +2315,27 @@
       "subcategory": null
     },
     {
+      "name": "news-feed",
+      "type": "registry:component",
+      "title": "News Feed",
+      "description": "Interactive news feed with categories, search, and animated cards",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/news-feed/news-feed.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
       "name": "newsletter-signup-block",
       "type": "registry:block",
       "title": "Newsletter Signup Block",
@@ -2447,6 +2531,25 @@
         }
       ],
       "category": "resumes",
+      "subcategory": null
+    },
+    {
+      "name": "profile-page",
+      "type": "registry:page",
+      "title": "Profile Page",
+      "description": "User profile with gradient cover, stats, and posts feed",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/profile/profile-page.tsx",
+          "type": "registry:page"
+        }
+      ],
+      "category": "page",
       "subcategory": null
     },
     {
@@ -2994,6 +3097,51 @@
         }
       ],
       "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "web-performance-page",
+      "type": "registry:component",
+      "title": "Web Performance Page",
+      "description": "Real-time analysis of web vitals and performance metrics",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/web-performance/web-performance-page.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "wizard-form",
+      "type": "registry:component",
+      "title": "Wizard Form",
+      "description": "Multi-step wizard form with animated transitions, validation, and progress tracking",
+      "registryDependencies": [
+        "button",
+        "input",
+        "label"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/forms/wizard-form.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "forms",
       "subcategory": null
     }
   ]

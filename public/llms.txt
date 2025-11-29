@@ -2,13 +2,13 @@
 
 > Production-ready UI components, blocks, and pages built on top of shadcn/ui and Framer Motion.
 
-**Last Updated:** 2025-11-27T07:00:53.107Z
+**Last Updated:** 2025-11-29T04:50:10.240Z
 
 ## Table of Contents
 
-- Components (60 items)
+- Components (66 items)
 - Blocks (38 items)
-- Pages (14 items)
+- Pages (15 items)
 - UI Elements (26 items)
 
 ### Components
@@ -39,10 +39,13 @@
 - [Animated Sidebar](https://ui.tripled.work/components/animated-sidebar): Sidebar with slide-in animation and overlay
 - [Animated Tooltip](https://ui.tripled.work/components/animated-tooltip): Tooltip with delay and slide animation
 - [Avatar Group](https://ui.tripled.work/components/avatar-group): Stacked avatar group with hover reveal and tooltips
+- [Blog Typography](https://ui.tripled.work/components/blog-typography): Beautiful blog post typography with text, links, images, blockquotes, and code examples
 - [Browse Folder](https://ui.tripled.work/components/browse-folder): Folder browser with animated tabs and content
 - [Command Palette](https://ui.tripled.work/components/command-palette): Command palette with search and keyboard navigation
+- [Comment Thread](https://ui.tripled.work/components/comment-thread): Nested comment thread with rich interactions and animations
 - [Context Menu](https://ui.tripled.work/components/context-menu): Right-click context menu with nested items animation
 - [Context Menu Bubble](https://ui.tripled.work/components/context-menu-bubble): Right-click reveals circular expanding radial menu with icons
+- [Course Content Page](https://ui.tripled.work/components/course-content-page): Interactive course page with video player, instructor details, curriculum sections, and progress tracking
 - [Currency Converter Card](https://ui.tripled.work/components/currency-converter-card): Finance conversion widget with animated inputs, simulated exchange updates, and contextual feedback
 - [Drag-to-Confirm Slider](https://ui.tripled.work/components/drag-to-confirm-slider): Slider that activates action only when fully dragged to end
 - [Expanding Search Dock](https://ui.tripled.work/components/expanding-search-dock): Minimal search icon that expands into full input with blur
@@ -51,10 +54,12 @@
 - [Mac Searchbar](https://ui.tripled.work/components/mac-searchbar): Mac-style searchbar with animated dropdown, glassmorphism effects, and smooth transitions
 - [Magnetic Avatar Group](https://ui.tripled.work/components/magnetic-avatar-group): Stacked avatars that spread apart on hover showing tooltips
 - [Multiple Accounts Switcher](https://ui.tripled.work/components/multiple-accounts): Glassmorphic account switcher with animated dropdown and accessible listbox controls
+- [News Feed](https://ui.tripled.work/components/news-feed): Interactive news feed with categories, search, and animated cards
 - [Projects Block](https://ui.tripled.work/components/projects-block): Animated project card with hover effects, image zoom, and link buttons
 - [Smart Hover Card](https://ui.tripled.work/components/smart-hover-card): Card that detects cursor direction and reveals content from that side
 - [Stacked Card Carousel](https://ui.tripled.work/components/stacked-card-carousel): Three stacked cards that shift and tilt dynamically on hover
 - [Weather Dashboard](https://ui.tripled.work/components/weather-dashboard): Immersive weather dashboard with hourly charting, weekly outlook, and live air-quality alerts
+- [Web Performance Page](https://ui.tripled.work/components/web-performance-page): Real-time analysis of web vitals and performance metrics
 
 ##### Dropdown
 
@@ -98,6 +103,8 @@
 ##### Tabs
 
 - [Animated Tabs](https://ui.tripled.work/components/animated-tabs): Tabs with sliding indicator animation
+
+- [Wizard Form](https://ui.tripled.work/components/wizard-form): Multi-step wizard form with animated transitions, validation, and progress tracking
 
 - [Interactive Resume Card](https://ui.tripled.work/components/resume-card): Professional resume template with animated sections and interactive elements
 - [Minimal Resume](https://ui.tripled.work/components/minimal-resume): Vercel-inspired minimal resume with clean typography and grid layout
@@ -159,6 +166,7 @@
 - [FAQ Section](https://ui.tripled.work/components/faq-section): Animated FAQ section with expandable questions and smooth transitions
 - [Feature Grid Section](https://ui.tripled.work/components/feature-grid-section): Animated feature grid with staggered card animations and icon reveals
 - [Pricing Section](https://ui.tripled.work/components/pricing-section): Animated pricing cards with hover effects and feature lists
+- [Profile Page](https://ui.tripled.work/components/profile-page): User profile with gradient cover, stats, and posts feed
 - [Scroll Progress Tracker](https://ui.tripled.work/components/scroll-progress-tracker): Fixed progress bar that follows scroll and glows on section changes
 - [Scroll Reveal](https://ui.tripled.work/components/scroll-reveal): Section that animates into view on scroll with intersection observer
 - [Stats Section](https://ui.tripled.work/components/stats-section): Animated statistics section with cards and counters

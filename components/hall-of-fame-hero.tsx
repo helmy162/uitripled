@@ -19,10 +19,7 @@ export function HallOfFameHero() {
       className="relative h-[60vh] min-h-[400px] w-full flex items-center justify-center overflow-hidden"
     >
       {/* Animated Background */}
-      <motion.div
-        style={{ y, opacity }}
-        className="absolute inset-0 z-0"
-      >
+      <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background z-10" />
 
         {/* Dot Grid Pattern */}
@@ -82,7 +79,9 @@ export function HallOfFameHero() {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="text-xl sm:text-2xl text-muted-foreground max-w-2xl mx-auto font-light"
         >
-          Celebrating the first <span className="text-foreground font-medium">100 stargazers</span> who believed in us.
+          Celebrating the first{" "}
+          <span className="text-foreground font-medium">100 stargazers</span>{" "}
+          who believed in us.
         </motion.p>
 
         <motion.div

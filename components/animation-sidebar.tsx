@@ -41,6 +41,7 @@ export function AnimationsSidebar({
         "data",
         "decorative",
         "resumes",
+        "forms",
       ];
 
       if (validCategories.includes(normalizedTarget)) {
@@ -80,6 +81,7 @@ export function AnimationsSidebar({
     "data",
     "decorative",
     "resumes",
+    "forms",
   ];
 
   const filteredAnimations = useMemo(() => {
@@ -109,6 +111,7 @@ export function AnimationsSidebar({
       data: [],
       decorative: [],
       resumes: [],
+      forms: [],
     };
 
     filteredAnimations.forEach((anim) => {

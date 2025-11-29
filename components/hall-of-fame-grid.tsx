@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
-import { ExternalLink, Star } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 interface Stargazer {
   login: string;
@@ -57,13 +57,13 @@ export function HallOfFameGrid({ stargazers }: HallOfFameGridProps) {
 
             {/* Orbiting Fireball */}
             <div className="absolute -inset-1 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 overflow-hidden">
-                <div className="absolute top-1/2 left-1/2 w-[150%] h-[150%] -translate-x-1/2 -translate-y-1/2 animate-spin [animation-duration:4s] group-hover:[animation-duration:2s]">
-                    <div className="absolute top-0 left-1/2 w-16 h-16 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-white to-gray-300 rounded-full blur-xl opacity-90" />
-                </div>
+              <div className="absolute top-1/2 left-1/2 w-[150%] h-[150%] -translate-x-1/2 -translate-y-1/2 animate-spin [animation-duration:4s] group-hover:[animation-duration:2s]">
+                <div className="absolute top-0 left-1/2 w-16 h-16 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-white to-gray-300 rounded-full blur-xl opacity-90" />
+              </div>
             </div>
 
             <div className="absolute -inset-1 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-               <div className="absolute inset-0 bg-gradient-to-r from-gray-600 via-gray-400 to-white rounded-2xl blur opacity-20 group-hover:animate-pulse" />
+              <div className="absolute inset-0 bg-gradient-to-r from-gray-600 via-gray-400 to-white rounded-2xl blur opacity-20 group-hover:animate-pulse" />
             </div>
 
             {/* Card Content */}

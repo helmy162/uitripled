@@ -81,6 +81,7 @@ import { MultipleAccounts } from "@/components/components/account-switcher/multi
 import { MacSearchbar } from "@/components/search/mac-searchbar";
 import { ContextMenu } from "@/components/navigation/context-menu";
 import { SimpleCalendar } from "@/components/forms/simple-calendar";
+import { WizardForm } from "@/components/forms/wizard-form";
 import { TeamSectionBlock } from "@/components/sections/team-section-block";
 import { NewsletterSignupBlock } from "@/components/sections/newsletter-signup-block";
 import { FeatureComparisonBlock } from "@/components/sections/feature-comparison-block";
@@ -145,6 +146,12 @@ import { DashboardPage } from "@/components/components/stocks-dashboard/dashboar
 import { BrowseFolder } from "@/components/sections/browse-folder";
 import { GlowyWavesHero } from "@/components/sections/glowy-waves-hero";
 import { LiquidCursor } from "@/components/liquid-cursor";
+import { NewsFeed } from "@/components/components/news-feed/news-feed";
+import { CommentThread } from "@/components/components/comments/comment-thread";
+import { ProfilePage } from "@/components/components/profile/profile-page";
+import { WebPerformancePage } from "@/components/web-performance/web-performance-page";
+import { CourseContentPage } from "@/components/components/course-content/course-content-page";
+import { BlogTypography } from "@/components/components/blog/blog-typography";
 
 export const componentsRegistry: Component[] = [
   {
@@ -670,6 +677,97 @@ export const componentsRegistry: Component[] = [
     easing: "linear",
     display: true,
   },
+  {
+    id: "news-feed",
+    name: "News Feed",
+    description:
+      "Interactive news feed with categories, search, and animated cards",
+    category: "components",
+    tags: ["news", "feed", "list", "cards", "social"],
+    component: NewsFeed,
+    codePath: "@/components/components/news-feed/news-feed.tsx",
+    duration: "400ms",
+    easing: "easeOut",
+    display: true,
+  },
+  {
+    id: "comment-thread",
+    name: "Comment Thread",
+    description: "Nested comment thread with rich interactions and animations",
+    category: "components",
+    tags: ["comments", "thread", "social", "discussion", "feedback"],
+    component: CommentThread,
+    codePath: "@/components/components/comments/comment-thread.tsx",
+    duration: "300ms",
+    easing: "easeOut",
+    display: true,
+  },
+  {
+    id: "profile-page",
+    name: "Profile Page",
+    description: "User profile with gradient cover, stats, and posts feed",
+    category: "page",
+    tags: ["profile", "user", "social", "feed", "cover"],
+    component: ProfilePage,
+    codePath: "@/components/components/profile/profile-page.tsx",
+    duration: "500ms",
+    easing: "easeOut",
+    display: true,
+  },
+  {
+    id: "web-performance-page",
+    name: "Web Performance Page",
+    description: "Real-time analysis of web vitals and performance metrics",
+    category: "components",
+    tags: ["performance", "web vitals", "dashboard", "metrics"],
+    component: WebPerformancePage,
+    codePath: "@/components/web-performance/web-performance-page.tsx",
+    duration: "600ms",
+    easing: "easeOut",
+    display: true,
+  },
+  {
+    id: "course-content-page",
+    name: "Course Content Page",
+    description:
+      "Interactive course page with video player, instructor details, curriculum sections, and progress tracking",
+    category: "components",
+    tags: [
+      "course",
+      "education",
+      "video",
+      "instructor",
+      "curriculum",
+      "learning",
+      "dashboard",
+    ],
+    component: CourseContentPage,
+    codePath: "@/components/components/course-content/course-content-page.tsx",
+    duration: "500ms",
+    easing: "easeOut",
+    display: true,
+  },
+  {
+    id: "blog-typography",
+    name: "Blog Typography",
+    description:
+      "Beautiful blog post typography with text, links, images, blockquotes, and code examples",
+    category: "components",
+    tags: [
+      "blog",
+      "typography",
+      "text",
+      "article",
+      "content",
+      "links",
+      "images",
+    ],
+    component: BlogTypography,
+    codePath: "@/components/components/blog/blog-typography.tsx",
+    duration: "500ms",
+    easing: "easeOut",
+    display: true,
+  },
   // NEW: 20 Additional Components
   {
     id: "password-input",
@@ -1024,6 +1122,26 @@ export const componentsRegistry: Component[] = [
     duration: "300ms",
     easing: "spring",
     display: false, // People think its useless
+  },
+  {
+    id: "wizard-form",
+    name: "Wizard Form",
+    description:
+      "Multi-step wizard form with animated transitions, validation, and progress tracking",
+    category: "forms",
+    tags: [
+      "form",
+      "wizard",
+      "multi-step",
+      "validation",
+      "progress",
+      "animated",
+    ],
+    component: WizardForm,
+    codePath: "@/components/forms/wizard-form.tsx",
+    duration: "300ms",
+    easing: "spring",
+    display: true,
   },
   // NEW: 3 Additional Animated Sections
   {
