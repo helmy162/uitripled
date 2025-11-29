@@ -95,19 +95,13 @@ const itemVariants: Variants = {
 export function GlassmorphismPortfolioBlock() {
   return (
     <section className="relative min-h-screen overflow-hidden px-6 py-24 lg:py-32">
-      {/* Background gradient orbs */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute left-1/2 top-0 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-foreground/[0.035] blur-[140px]" />
-        <div className="absolute bottom-0 right-0 h-[360px] w-[360px] rounded-full bg-foreground/[0.025] blur-[120px]" />
-      </div>
-
       <div className="mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="relative overflow-hidden rounded-3xl border border-border/50 bg-background/45 p-8 shadow-[0_45px_120px_rgba(15,23,42,0.28)] backdrop-blur-2xl md:p-12 dark:shadow-[0_45px_120px_rgba(0,0,0,0.5)]"
+          className="relative overflow-hidden rounded-3xl border border-border/50 bg-background/45 p-8 backdrop-blur-2xl md:p-12"
         >
           {/* Glass gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-foreground/[0.05] via-transparent to-transparent pointer-events-none" />

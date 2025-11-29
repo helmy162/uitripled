@@ -118,7 +118,7 @@ export function CommandPalette() {
                 aria-modal="true"
                 aria-label="Command palette"
                 {...panelVariants}
-                className="relative w-full max-w-xl overflow-hidden rounded-3xl border border-border/60 bg-card/90 shadow-[0_45px_120px_-30px_rgba(15,23,42,0.65)] backdrop-blur-2xl"
+                className="relative w-full max-w-xl overflow-hidden rounded-3xl border border-border/60 bg-card/90 backdrop-blur-2xl"
                 onClick={(event) => event.stopPropagation()}
               >
                 <div

@@ -65,17 +65,12 @@ const item: Variants = {
 export function GlassmorphismLaunchTimelineBlock() {
   return (
     <section className="relative overflow-hidden px-6 py-24 lg:py-32">
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute left-1/2 top-0 h-[460px] w-[460px] -translate-x-1/2 rounded-full bg-foreground/[0.035] blur-3xl" />
-        <div className="absolute bottom-0 right-0 h-[380px] w-[380px] rounded-full bg-foreground/[0.025] blur-[120px]" />
-      </div>
-
       <div className="mx-auto grid max-w-6xl gap-14 lg:grid-cols-[1.05fr_1fr]">
         <motion.div
           initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="relative overflow-hidden rounded-3xl border border-border/50 bg-background/45 p-10 shadow-[0_45px_120px_rgba(15,23,42,0.28)] backdrop-blur-2xl"
+          className="relative overflow-hidden rounded-3xl border border-border/50 bg-background/45 p-10 backdrop-blur-2xl"
         >
           <div className="absolute inset-0 bg-gradient-to-br from-foreground/[0.04] via-transparent to-transparent" />
           <div className="relative">
