@@ -68,7 +68,7 @@ import { CreditCard } from "@/components/components/cards/credit-card.tsx"
 
 ## Component Details
 
-- **Category**: components
+- **Category**: cards
 - **Tags**: card, 3d, flip, payment, credit
 
 ### Technical Specifications

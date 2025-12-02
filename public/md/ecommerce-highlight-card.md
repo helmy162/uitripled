@@ -71,7 +71,7 @@ import { EcommerceHighlightCard } from "@/components/components/cards/ecommerce-
 
 ## Component Details
 
-- **Category**: components
+- **Category**: cards
 - **Tags**: card, product, ecommerce, bundle
 
 ### Technical Specifications

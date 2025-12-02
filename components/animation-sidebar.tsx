@@ -83,7 +83,7 @@ export function AnimationsSidebar({
     "decorative",
     "resumes",
     "forms",
-    "cards"
+    "cards",
   ];
 
   const filteredAnimations = useMemo(() => {

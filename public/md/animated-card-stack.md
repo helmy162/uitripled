@@ -68,7 +68,7 @@ import { AnimatedCardStack } from "@/components/components/cards/animated-card-s
 
 ## Component Details
 
-- **Category**: components
+- **Category**: cards
 - **Tags**: card, stack, hover, shadcn
 
 ### Technical Specifications

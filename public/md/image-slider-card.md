@@ -69,7 +69,7 @@ import { AccessibleImageSliderCard } from "@/components/components/cards/image-s
 
 ## Component Details
 
-- **Category**: components
+- **Category**: cards
 - **Tags**: carousel, image, card, accessibility, keyboard
 
 ### Technical Specifications

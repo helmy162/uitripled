@@ -211,8 +211,8 @@
           "type": "registry:component"
         }
       ],
-      "category": "components",
-      "subcategory": "cards"
+      "category": "cards",
+      "subcategory": null
     },
     {
       "name": "animated-checkbox",
@@ -886,8 +886,8 @@
           "type": "registry:component"
         }
       ],
-      "category": "components",
-      "subcategory": "cards"
+      "category": "cards",
+      "subcategory": null
     },
     {
       "name": "cta-banner-section",
@@ -1029,8 +1029,8 @@
           "type": "registry:component"
         }
       ],
-      "category": "components",
-      "subcategory": "cards"
+      "category": "cards",
+      "subcategory": null
     },
     {
       "name": "drag-to-confirm-slider",
@@ -1136,8 +1136,8 @@
           "type": "registry:component"
         }
       ],
-      "category": "components",
-      "subcategory": "cards"
+      "category": "cards",
+      "subcategory": null
     },
     {
       "name": "elastic-switch",
@@ -1491,6 +1491,44 @@
       "subcategory": "forms"
     },
     {
+      "name": "glass-blog-card",
+      "type": "registry:component",
+      "title": "Glass Blog Card",
+      "description": "Glassmorphism blog card with image zoom, author info, and read action",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/cards/glass-blog-card.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "cards",
+      "subcategory": null
+    },
+    {
+      "name": "glass-checkout-card",
+      "type": "registry:component",
+      "title": "Glass Checkout Card",
+      "description": "Glassmorphism checkout card with payment method selector and input fields",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/cards/glass-checkout-card.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "cards",
+      "subcategory": null
+    },
+    {
       "name": "glass-forgot-password-card",
       "type": "registry:component",
       "title": "Glass Forgot Password Card",
@@ -1512,6 +1550,25 @@
       ],
       "category": "components",
       "subcategory": "forms"
+    },
+    {
+      "name": "glass-order-summary",
+      "type": "registry:component",
+      "title": "Glass Order Summary",
+      "description": "Glassmorphism order summary card with item list and checkout button",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/cards/glass-order-summary.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "cards",
+      "subcategory": null
     },
     {
       "name": "glass-profile-settings-card",
@@ -1612,6 +1669,25 @@
       ],
       "category": "components",
       "subcategory": "forms"
+    },
+    {
+      "name": "glass-wallet-card",
+      "type": "registry:component",
+      "title": "Glass Wallet Card",
+      "description": "Glassmorphism crypto wallet card with balance, trend, and action buttons",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/cards/glass-wallet-card.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "cards",
+      "subcategory": null
     },
     {
       "name": "glassmorphism-cta-block",
@@ -1991,8 +2067,8 @@
           "type": "registry:component"
         }
       ],
-      "category": "components",
-      "subcategory": "cards"
+      "category": "cards",
+      "subcategory": null
     },
     {
       "name": "image-slider-card",
@@ -2014,8 +2090,8 @@
           "type": "registry:component"
         }
       ],
-      "category": "components",
-      "subcategory": "cards"
+      "category": "cards",
+      "subcategory": null
     },
     {
       "name": "interactive-logs-table",

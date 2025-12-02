@@ -33,7 +33,12 @@ export function SmartTabs({ items, defaultValue, className }: SmartTabsProps) {
   }, [items, activeTab]);
 
   return (
-    <div className={cn("w-full flex flex-col gap-6 items-start h-screen", className)}>
+    <div
+      className={cn(
+        "w-full flex flex-col gap-6 items-start h-screen",
+        className
+      )}
+    >
       <Tabs
         defaultValue={defaultValue || items[0]?.id}
         value={activeTab}

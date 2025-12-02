@@ -29,27 +29,29 @@ const defaultItems: OrderItem[] = [
   {
     id: "1",
     name: "Premium Icon Pack",
-    price: 29.00,
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=100&q=80",
+    price: 29.0,
+    image:
+      "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=100&q=80",
     quantity: 1,
-    variant: "Pro License"
+    variant: "Pro License",
   },
   {
     id: "2",
     name: "UI Design Kit",
-    price: 49.00,
-    image: "https://images.unsplash.com/photo-1586717791821-3f44a5638d48?w=100&q=80",
+    price: 49.0,
+    image:
+      "https://images.unsplash.com/photo-1586717791821-3f44a5638d48?w=100&q=80",
     quantity: 1,
-    variant: "Dark Mode"
-  }
+    variant: "Dark Mode",
+  },
 ];
 
 export function GlassOrderSummary({
   items = defaultItems,
-  subtotal = 78.00,
-  tax = 7.80,
+  subtotal = 78.0,
+  tax = 7.8,
   shipping = 0,
-  total = 85.80,
+  total = 85.8,
   className,
 }: GlassOrderSummaryProps) {
   return (
@@ -65,7 +67,9 @@ export function GlassOrderSummary({
             <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary">
               <ShoppingBag className="h-4 w-4" />
             </div>
-            <h3 className="text-lg font-semibold text-foreground">Order Summary</h3>
+            <h3 className="text-lg font-semibold text-foreground">
+              Order Summary
+            </h3>
           </div>
 
           <div className="space-y-4">
@@ -77,15 +81,27 @@ export function GlassOrderSummary({
                 className="flex items-center gap-4 rounded-lg p-2 transition-colors hover:bg-background/40"
               >
                 <div className="h-12 w-12 overflow-hidden rounded-md border border-border/50 bg-background/50">
-                  <img src={item.image} alt={item.name} className="h-full w-full object-cover" />
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="h-full w-full object-cover"
+                  />
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-sm font-medium text-foreground">{item.name}</h4>
-                  <p className="text-xs text-muted-foreground">{item.variant}</p>
+                  <h4 className="text-sm font-medium text-foreground">
+                    {item.name}
+                  </h4>
+                  <p className="text-xs text-muted-foreground">
+                    {item.variant}
+                  </p>
                 </div>
                 <div className="text-right">
-                  <p className="text-sm font-medium text-foreground">${item.price.toFixed(2)}</p>
-                  <p className="text-xs text-muted-foreground">x{item.quantity}</p>
+                  <p className="text-sm font-medium text-foreground">
+                    ${item.price.toFixed(2)}
+                  </p>
+                  <p className="text-xs text-muted-foreground">
+                    x{item.quantity}
+                  </p>
                 </div>
               </motion.div>
             ))}

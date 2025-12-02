@@ -1,6 +1,6 @@
 ---
-title: Hover Expand Card
-description: Card that lifts and expands on hover
+title: Glass Order Summary
+description: Glassmorphism order summary card with item list and checkout button
 component: true
 ---
 
@@ -9,11 +9,11 @@ component: true
 
 import * as React from "react"
 
-import { HoverExpandCard } from "@/components/components/cards/hover-expand.tsx"
+import { GlassOrderSummary } from "@/components/components/cards/glass-order-summary.tsx"
 
-export function HoverExpandCardDemo() {
+export function GlassOrderSummaryDemo() {
   return (
-    <HoverExpandCard />
+    <GlassOrderSummary />
   )
 }
 ```
@@ -29,7 +29,7 @@ export function HoverExpandCardDemo() {
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @uitripled/hover-expand-card
+npx shadcn@latest add @uitripled/glass-order-summary
 ```
 
 </TabsContent>
@@ -38,15 +38,9 @@ npx shadcn@latest add @uitripled/hover-expand-card
 
 <Steps>
 
-<Step>Add the required components to your project.</Step>
-
-The `Hover Expand Card` component uses the following components. Make sure you have them installed in your project.
-
-- badge
-
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="hover-expand-card" title="@/components/components/cards/hover-expand.tsx" />
+<ComponentSource name="glass-order-summary" title="@/components/components/cards/glass-order-summary.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,25 +53,23 @@ The `Hover Expand Card` component uses the following components. Make sure you h
 ## Usage
 
 ```tsx showLineNumbers
-import { HoverExpandCard } from "@/components/components/cards/hover-expand.tsx"
+import { GlassOrderSummary } from "@/components/components/cards/glass-order-summary.tsx"
 ```
 
 ```tsx showLineNumbers
-<HoverExpandCard />
+<GlassOrderSummary />
 ```
 
 ## Component Details
 
 - **Category**: cards
-- **Tags**: card, hover, lift
+- **Tags**: ecommerce, card, summary, glassmorphism, cart, shadcn
 
 ### Technical Specifications
 
 **Dependencies**:
 - `framer-motion`
-
-**UI Components**:
-- badge
+- `react`
 
 This component uses **Framer Motion** for animations and motion effects.
 
@@ -109,11 +101,11 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { HoverExpandCard } from "@/components/components/cards/hover-expand.tsx"
+import { GlassOrderSummary } from "@/components/components/cards/glass-order-summary.tsx"
 
 export function BasicExample() {
   return (
-    <HoverExpandCard />
+    <GlassOrderSummary />
   )
 }
 ```
@@ -131,4 +123,4 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Related Components
 
-- [badge](/docs/components/badge)
+No related components.

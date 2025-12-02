@@ -23,8 +23,10 @@ interface GlassBlogCardProps {
 
 const defaultPost = {
   title: "The Future of UI Design",
-  excerpt: "Exploring the latest trends in glassmorphism, 3D elements, and micro-interactions.",
-  image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80",
+  excerpt:
+    "Exploring the latest trends in glassmorphism, 3D elements, and micro-interactions.",
+  image:
+    "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80",
   author: {
     name: "Sarah Chen",
     avatar: "https://github.com/shadcn.png",
@@ -104,7 +106,9 @@ export function GlassBlogCard({
                 <AvatarFallback>{author.name[0]}</AvatarFallback>
               </Avatar>
               <div className="flex flex-col text-xs">
-                <span className="font-medium text-foreground">{author.name}</span>
+                <span className="font-medium text-foreground">
+                  {author.name}
+                </span>
                 <span className="text-muted-foreground">{date}</span>
               </div>
             </div>

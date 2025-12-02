@@ -73,7 +73,7 @@ import { DetailTaskCard } from "@/components/components/cards/detail-task.tsx"
 
 ## Component Details
 
-- **Category**: components
+- **Category**: cards
 - **Tags**: task, management, form, card, dashboard
 
 ### Technical Specifications

@@ -15,7 +15,7 @@ interface GlassCheckoutCardProps {
 }
 
 export function GlassCheckoutCard({
-  amount = 85.80,
+  amount = 85.8,
   className,
 }: GlassCheckoutCardProps) {
   const [paymentMethod, setPaymentMethod] = useState("card");
@@ -30,8 +30,12 @@ export function GlassCheckoutCard({
       <Card className="group relative overflow-hidden rounded-2xl border-border/50 bg-card/30 backdrop-blur-md transition-all duration-300 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10">
         <div className="p-6">
           <div className="mb-6">
-            <h3 className="text-lg font-semibold text-foreground">Payment Details</h3>
-            <p className="text-sm text-muted-foreground">Complete your purchase securely</p>
+            <h3 className="text-lg font-semibold text-foreground">
+              Payment Details
+            </h3>
+            <p className="text-sm text-muted-foreground">
+              Complete your purchase securely
+            </p>
           </div>
 
           {/* Payment Methods */}
@@ -42,12 +46,17 @@ export function GlassCheckoutCard({
                 onClick={() => setPaymentMethod(method)}
                 className={cn(
                   "flex h-12 items-center justify-center rounded-lg border border-border/50 bg-background/50 transition-all hover:bg-background/80",
-                  paymentMethod === method && "border-primary bg-primary/10 text-primary"
+                  paymentMethod === method &&
+                    "border-primary bg-primary/10 text-primary"
                 )}
               >
                 {method === "card" && <CreditCard className="h-5 w-5" />}
-                {method === "paypal" && <span className="font-bold italic">Pay</span>}
-                {method === "apple" && <span className="font-semibold">Pay</span>}
+                {method === "paypal" && (
+                  <span className="font-bold italic">Pay</span>
+                )}
+                {method === "apple" && (
+                  <span className="font-semibold">Pay</span>
+                )}
               </button>
             ))}
           </div>

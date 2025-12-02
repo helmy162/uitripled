@@ -3,7 +3,13 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowUpRight, ArrowDownLeft, Wallet, CreditCard, TrendingUp } from "lucide-react";
+import {
+  ArrowUpRight,
+  ArrowDownLeft,
+  Wallet,
+  CreditCard,
+  TrendingUp,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface GlassWalletCardProps {
@@ -57,12 +63,16 @@ export function GlassWalletCard({
                 <Wallet className="h-5 w-5" />
               </div>
               <div>
-                <p className="text-xs font-medium text-muted-foreground">Total Balance</p>
+                <p className="text-xs font-medium text-muted-foreground">
+                  Total Balance
+                </p>
                 <div className="flex items-baseline gap-1">
                   <h3 className="text-2xl font-bold tracking-tight text-foreground">
                     ${balance}
                   </h3>
-                  <span className="text-xs font-medium text-muted-foreground">{currency}</span>
+                  <span className="text-xs font-medium text-muted-foreground">
+                    {currency}
+                  </span>
                 </div>
               </div>
             </div>
@@ -81,15 +91,19 @@ export function GlassWalletCard({
           {/* Card Details */}
           <div className="space-y-4">
             <div className="flex items-center justify-between text-sm">
-               <div className="flex items-center gap-2 text-muted-foreground">
-                 <CreditCard className="h-4 w-4" />
-                 <span>•••• •••• •••• 4242</span>
-               </div>
-               <span className="font-mono text-xs text-muted-foreground">{expiry}</span>
+              <div className="flex items-center gap-2 text-muted-foreground">
+                <CreditCard className="h-4 w-4" />
+                <span>•••• •••• •••• 4242</span>
+              </div>
+              <span className="font-mono text-xs text-muted-foreground">
+                {expiry}
+              </span>
             </div>
 
             <div className="flex items-center justify-between">
-              <span className="text-sm font-medium text-foreground">{cardHolder}</span>
+              <span className="text-sm font-medium text-foreground">
+                {cardHolder}
+              </span>
               <span className="rounded-full bg-secondary/50 px-3 py-1 font-mono text-xs text-secondary-foreground backdrop-blur-sm">
                 {address}
               </span>
@@ -117,7 +131,9 @@ export function GlassWalletCard({
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-secondary text-secondary-foreground shadow-lg">
                 <ArrowDownLeft className="h-6 w-6" />
               </div>
-              <span className="text-sm font-medium text-foreground">Receive</span>
+              <span className="text-sm font-medium text-foreground">
+                Receive
+              </span>
             </motion.button>
           </div>
         </div>
