@@ -1,7 +1,8 @@
 import { generateRegistryRssFeed } from "@wandry/analytics-sdk";
 import type { NextRequest } from "next/server";
 
-export const revalidate = 3600;
+// Revalidate every 6 hours to reduce edge invocations
+export const revalidate = 21600; // 6 hours
 
 export async function GET(request: NextRequest) {
   const baseUrl = new URL(request.url).origin;
@@ -39,8 +40,9 @@ export async function GET(request: NextRequest) {
   return new Response(rssXml, {
     headers: {
       "Content-Type": "application/rss+xml; charset=utf-8",
+      // Aggressive caching to reduce edge requests - cache for 6 hours, allow stale for 1 day
       "Cache-Control":
-        "public, max-age=3600, s-maxage=3600, stale-while-revalidate=86400",
+        "public, max-age=21600, s-maxage=21600, stale-while-revalidate=86400",
     },
   });
 }

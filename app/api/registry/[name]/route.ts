@@ -93,8 +93,9 @@ export async function GET(
       {
         headers: {
           "Content-Type": "application/json",
+          // Aggressive caching to reduce edge requests - cache for 1 day, allow stale for 7 days
           "Cache-Control":
-            "public, s-maxage=3600, stale-while-revalidate=86400",
+            "public, s-maxage=86400, max-age=86400, stale-while-revalidate=604800",
         },
       }
     );

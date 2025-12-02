@@ -1,6 +1,10 @@
 import { ImageResponse } from "next/og";
 
+// Edge runtime is required for ImageResponse, but we'll add aggressive caching
 export const runtime = "edge";
+
+// Cache for 1 year, revalidate weekly to reduce edge invocations
+export const revalidate = 604800; // 7 days in seconds
 
 const DEFAULT_OG_IMAGE =
   "https://iimydr2b8o.ufs.sh/f/Zqn6AViLMoTtAc2cc4nrC37b1yitXR5Fm2HP6TVsYEDNGcjO";
@@ -152,23 +156,35 @@ export async function GET(request: Request) {
     const { getComponentById } = await import("@/lib/components-registry");
     const metadata = getComponentById(componentId);
 
+    // Create image response
+    let imageResponse: ImageResponse;
+
     if (!metadata) {
       const jsx = NotFoundOGImage(componentId, faviconUrl);
-      return new ImageResponse(jsx, {
+      imageResponse = new ImageResponse(jsx, {
+        width: 1200,
+        height: 630,
+      });
+    } else {
+      const jsx = ComponentOGImage(
+        metadata.name,
+        metadata.description || "A component from UI TripleD",
+        faviconUrl
+      );
+      imageResponse = new ImageResponse(jsx, {
         width: 1200,
         height: 630,
       });
     }
 
-    const jsx = ComponentOGImage(
-      metadata.name,
-      metadata.description || "A component from UI TripleD",
-      faviconUrl
+    // Add aggressive caching headers to reduce edge invocations
+    // Cache for 1 year, allow stale content for 7 days
+    imageResponse.headers.set(
+      "Cache-Control",
+      "public, s-maxage=31536000, max-age=31536000, stale-while-revalidate=604800"
     );
-    return new ImageResponse(jsx, {
-      width: 1200,
-      height: 630,
-    });
+
+    return imageResponse;
   } catch (e) {
     const message =
       typeof e === "object" &&
